@@ -28,7 +28,13 @@ jobs:
       - name: wget file
         uses: wei/wget@v1
         with: #
-          args: https://raw.githubusercontent.com/MaximumADHD/Roblox-Client-Tracker/roblox/textures/ClassImages.PNG -O "$currentdate studio-icons/ClassImages/ClassImages-test.png" 
+          args: https://raw.githubusercontent.com/MaximumADHD/Roblox-Client-Tracker/roblox/textures/ClassImages.PNG
+          
+      - name: test action
+        run: ls -alh
+        
+      - name: Rename and Move file
+        run: mv ClassImages.PNG studio-icons/
       
       - uses: stefanzweifel/git-auto-commit-action@v4
       
