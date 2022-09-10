@@ -23,7 +23,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Set Current Date
-        run: echo "currentdate=$(date '+%Y-%m-%d') >> $GITHUB_ENV
+        run: echo "currentdate=$(date '+%Y-%m-%d')" >> $GITHUB_ENV
         
       - name: wget file
         uses: wei/wget@v1
