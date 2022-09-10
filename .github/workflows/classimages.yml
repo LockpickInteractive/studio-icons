@@ -27,8 +27,8 @@ jobs:
         
       - name: wget file
         uses: wei/wget@v1
-        with: #studio-icons/ClassImages/ClassImages.png
-          args: -O "$currentdate test.png" https://raw.githubusercontent.com/MaximumADHD/Roblox-Client-Tracker/roblox/textures/ClassImages.PNG
+        with: #
+          args: -O "$currentdate studio-icons/ClassImages/ClassImages-test.png" https://raw.githubusercontent.com/MaximumADHD/Roblox-Client-Tracker/roblox/textures/ClassImages.PNG
       
       - uses: stefanzweifel/git-auto-commit-action@v4
       
