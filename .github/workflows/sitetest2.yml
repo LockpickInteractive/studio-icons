@@ -1,0 +1,28 @@
+name: Get ClassIcons (Sitetest2)
+
+on:
+  schedule:
+  - cron: "10 8 * * *"
+
+  workflow_dispatch:
+jobs:
+  retrieve:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set Current Date
+        run: echo "currentdate=$(date '+%Y-%m-%d')" >> $GITHUB_ENV
+      
+      - name: wget file
+        uses: wei/wget@v1
+        with: 
+          args: https://raw.githubusercontent.com/MaximumADHD/Roblox-Client-Tracker/sitetest2.robloxlabs/textures/ClassImages.PNG
+        
+      - name: Rename and Move file
+        run: mv ClassImages.PNG "sitetest2/$currentdate ClassImages.png"
+      
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+           commit_message: sitetest2 ClassIcons Update
