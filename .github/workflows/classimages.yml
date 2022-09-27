@@ -25,5 +25,4 @@ jobs:
       
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-           token: ${{ secrets.BOT_TOKEN }}
            commit_message: ClassIcons Update
