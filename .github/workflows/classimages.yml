@@ -30,3 +30,4 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
            commit_message: ClassIcons Update
+           commit_author: GitHub Actions <actions@github.com>
