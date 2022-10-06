@@ -1,4 +1,4 @@
-name: Get ClassIcons (Sitetest1)
+name: Get ClassIcons (zCanary)
 
 on:
   schedule:
@@ -21,11 +21,12 @@ jobs:
       - name: wget file
         uses: wei/wget@v1
         with: 
-          args: https://raw.githubusercontent.com/MaximumADHD/Roblox-Client-Tracker/sitetest1.robloxlabs/textures/ClassImages.PNG
+          args: https://raw.githubusercontent.com/MaximumADHD/Roblox-Client-Tracker/zCanary/textures/ClassImages.PNG
         
       - name: Rename and Move file
         run: mv ClassImages.PNG "sitetest1/$currentdate ClassImages.png"
       
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-           commit_message: sitetest1 ClassIcons Update
+           commit_message: zCanary ClassIcons Update
+           commit_author: GitHub Actions <actions@github.com>
