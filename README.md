@@ -1,4 +1,4 @@
-# studio-icons
+# <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Roblox_Studio_logo_2021_present.svg" data-canonical-src="https://upload.wikimedia.org/wikipedia/commons/5/58/Roblox_Studio_logo_2021_present.svg " width="50" height="50" />studio-icons
 #### A repository holding Roblox Studio Icons, updated Daily
 #### Uses icons from [Roblox Client Tracker](https://github.com/MaximumADHD/Roblox-Client-Tracker) by [MaximumADHD](https://github.com/MaximumADHD)
 #
